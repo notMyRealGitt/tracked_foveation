@@ -37,7 +37,6 @@ Stefan Kurćan 2026
 ## TODO  
 - setup a video playback pipeline, taking in a local video file
 
-- mouse tracking into coordinates
 - circular ROI based on coordinates
 
 - add ROI to video pipeline
@@ -66,7 +65,7 @@ Stefan Kurćan 2026
 
 
 ## NOW  
-
+- mouse tracking into coordinates
 
 
 ## NEXT  
