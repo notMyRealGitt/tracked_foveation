@@ -10,6 +10,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/$<CONFIGURATION>")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/$<CONFIGURATION>")
 
 add_subdirectory(vendor EXCLUDE_FROM_ALL)
-add_executable(temp temp.cpp)
 
-target_link_libraries(temp PRIVATE vendor)
+add_executable(mouse_tracker mouse_tracker.cpp)
+target_link_libraries(mouse_tracker PRIVATE vendor)
