@@ -35,7 +35,6 @@ Stefan Kurćan 2026
 # Task breakdown
 
 ## TODO  
-- setup a video playback pipeline, taking in a local video file
 
 - circular ROI based on coordinates
 
@@ -65,6 +64,7 @@ Stefan Kurćan 2026
 
 
 ## NOW  
+- setup a video playback pipeline, taking in a local video file
 
 
 

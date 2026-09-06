@@ -13,3 +13,11 @@ add_subdirectory(vendor EXCLUDE_FROM_ALL)
 
 add_executable(mouse_tracker mouse_tracker.cpp)
 target_link_libraries(mouse_tracker PRIVATE vendor)
+
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GST REQUIRED gstreamer-1.0)
+
+add_executable(pipeline pipeline.cpp)
+target_include_directories(pipeline PRIVATE ${GST_INCLUDE_DIRS})
+target_link_libraries(pipeline PRIVATE ${GST_LIBRARIES})
+target_compile_options(pipeline PRIVATE ${GST_CFLAGS_OTHER})
